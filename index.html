@@ -10,7 +10,14 @@
         font-family: cursive;
     }
 
-    div{
+    #main{
+        border:4.5px dashed red;
+        padding:10px;
+    }
+
+
+
+    #inner{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,22 +27,30 @@
     
     
     }
-    div:hover{
+    #inner:hover{
         width:200px;
         cursor: pointer;
         background-color: antiquewhite;
     }
+
+    img{
+        border-radius: 15px;
+    }
 </style>
 
 <body>
+  <div id="main">
     <center>
         <h2 style="color:tomato">To my Favourite One...</h2>
-        <img src="https://wallpapers.com/images/hd/studious-cool-girl-cartoon-yumrtk7cy50vu7u0.jpg" height="500">
+        <img src="https://wallpapers.com/images/hd/studious-cool-girl-cartoon-yumrtk7cy50vu7u0.jpg" height="400">
         <h1 style="color:tomato">Developing this for my favourite girl out there...</h1>
-        <div onclick="myfun()">
+        <div id="inner" onclick="myfun()">
             <h3 style="color:tomato">Let's Start</h3>
         </div>
     </center>
+  </div> 
+
+   
    
     <script>
         function myfun(){
